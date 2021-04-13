@@ -13,7 +13,7 @@ RUN apk add --no-cache \
     imagemagick
 
 ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true \
-    PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium-browser \
+    PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium-browser --ignore-certificate-errors \
     USE_IMAGE_MAGICK=true
 
 COPY package*.json ./
