@@ -21,6 +21,7 @@ const gm = require("gm");
     args: [
       "--disable-dev-shm-usage",
       "--no-sandbox",
+      "--ignore-certificate-errors",
       `--lang=${config.language}`,
     ],
     headless: config.debug !== true,
